@@ -14,6 +14,8 @@ nnoremap <S-C-p> "0p
 " nnoremap <leader>d "_d
 " nnoremap x "_x
 
+let mapleader = " "
+
 " Increment/decrement
 nnoremap + <C-a>
 nnoremap - <C-x>

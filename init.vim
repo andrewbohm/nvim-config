@@ -26,6 +26,7 @@ set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
 set shell=zsh
+set noswapfile
 set backupskip=/tmp/*,/private/tmp/*
 
 " incremental substitution (neovim)
