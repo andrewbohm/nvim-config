@@ -11,7 +11,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-nnoremap <silent> <C-p> <cmd>Telescope find_files hidden=true<cr>
+nnoremap <silent> <C-p> <cmd>Telescope git_files hidden=true<cr>
 
 lua << EOF
 local actions = require('telescope.actions')
