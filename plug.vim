@@ -23,6 +23,7 @@ if has("nvim")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'SirVer/ultisnips'
 
   Plug 'puremourning/vimspector'
   Plug 'szw/vim-maximizer'

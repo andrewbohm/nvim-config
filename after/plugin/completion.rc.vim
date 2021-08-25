@@ -13,4 +13,4 @@ imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ?
 
 "map <c-p> to manually trigger completion
 imap <silent> <c-space> <Plug>(completion_trigger)
-
+let g:completion_enable_snippet = 'UltiSnips'
