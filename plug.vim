@@ -24,6 +24,10 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
 
+  " Themes
+  Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'npxbr/gruvbox.nvim'
+
   Plug 'puremourning/vimspector'
   Plug 'szw/vim-maximizer'
 endif
