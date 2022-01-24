@@ -51,6 +51,22 @@ if has("nvim")
   Plug 'SirVer/ultisnips'
   Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
+  " Sql
+  Plug 'tpope/vim-dadbod'
+  Plug 'kristijanhusak/vim-dadbod-ui'
+  Plug 'kristijanhusak/vim-dadbod-completion'
+
+  " Rust
+  Plug 'simrat39/rust-tools.nvim'
+
+  " Svelte
+  Plug 'evanleck/vim-svelte'
+
+  " Debugging
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'mfussenegger/nvim-dap'
+
+
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
