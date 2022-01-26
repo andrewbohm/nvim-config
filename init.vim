@@ -133,8 +133,10 @@ endif
 " Set cursor line color on visual mode
 highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
 
-highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
+highlight LineNr cterm=none ctermfg=240 guifg=#2b506e 
+" highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
 " highlight LineNr cterm=none ctermfg=240 guifg=#bd93f9 guibg=#bd93f9
+
 highlight CursorLineNr guifg=#6272a4 
 
 augroup BgHighlight

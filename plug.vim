@@ -15,9 +15,9 @@ if has("nvim")
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'neovim/nvim-lspconfig'
   Plug 'kabouzeid/nvim-lspinstall'
-  Plug 'glepnir/lspsaga.nvim'
+  
+  " Plug 'glepnir/lspsaga.nvim'
   Plug 'folke/lsp-colors.nvim'
-  " Plug 'nvim-lua/completion-nvim'
 
   " Completion
   Plug 'hrsh7th/nvim-cmp'
@@ -61,6 +61,12 @@ if has("nvim")
 
   " Svelte
   Plug 'evanleck/vim-svelte'
+
+  " Prettier
+  " post install (yarn install | npm install) then load plugin only for editing supported files
+  Plug 'prettier/vim-prettier', {
+    \ 'do': 'yarn install --frozen-lockfile --production',
+    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
   " Debugging
   Plug 'nvim-lua/plenary.nvim'
