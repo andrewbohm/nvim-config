@@ -36,7 +36,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'tsserver', 'go', 'gopls' }
+local servers = { 'pyright', 'tsserver', 'go', 'gopls', 'dockerls' }
 -- for _, lsp in ipairs(servers) do
 --   nvim_lsp[lsp].setup {
 --     on_attach = on_attach,
@@ -72,6 +72,14 @@ for _, server_name in pairs(servers) do
         end
     end
 end
+
+nvim_lsp.dockerls.setup{}
+
+  -- Default Values:
+  --   cmd = { "docker-langserver", "--stdio" }
+  --   filetypes = { "Dockerfile", "dockerfile" }
+  --   root_dir = root_pattern("Dockerfile")
+
 
 nvim_lsp.rust_analyzer.setup({
     on_attach=on_attach,
