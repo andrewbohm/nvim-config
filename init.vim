@@ -29,6 +29,7 @@ set expandtab
 set shell=zsh
 set noswapfile
 set backupskip=/tmp/*,/private/tmp/*
+set wrap
 
 " incremental substitution (neovim)
 if has('nvim')

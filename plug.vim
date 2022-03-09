@@ -73,6 +73,11 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'mfussenegger/nvim-dap'
 
+  " GO
+  Plug 'ray-x/go.nvim'
+
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'folke/trouble.nvim'
 
 endif
 
