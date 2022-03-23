@@ -73,6 +73,7 @@ for _, server_name in pairs(servers) do
     end
 end
 
+
 nvim_lsp.dockerls.setup{}
 
   -- Default Values:
@@ -102,6 +103,23 @@ nvim_lsp.rust_analyzer.setup({
 -- rust tools config
 require('rust-tools').setup({})
 
+-- golang
+nvim_lsp.gopls.setup{
+	cmd = {'gopls'},
+	-- for postfix snippets and analyzers
+	-- capabilities = capabilities,
+	    settings = {
+	      gopls = {
+		      experimentalPostfixCompletions = true,
+		      analyses = {
+		        unusedparams = true,
+		        shadow = true,
+		     },
+		     staticcheck = true,
+		    },
+	    },
+	on_attach = on_attach,
+}
 
 
 nvim_lsp.diagnosticls.setup {
@@ -142,8 +160,7 @@ nvim_lsp.diagnosticls.setup {
         args = { '--stdin', '--stdin-filename', '%filename', '--fix-to-stdout' },
         rootPatterns = { '.git' },
       },
-      prettier = {
-        command = 'prettier',
+      prettier = { command = 'prettier',
         args = { '--stdin-filepath', '%filename' }
       }
     },
