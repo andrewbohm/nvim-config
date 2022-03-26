@@ -157,3 +157,4 @@ endif
 set exrc
 "}}}
 
+nmap <leader><leader> :Lexplore <cr>
