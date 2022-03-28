@@ -37,7 +37,8 @@ if has("nvim")
   Plug 'SirVer/ultisnips'
 
   " Themes
-  Plug 'dracula/vim', { 'as': 'dracula' }
+  " Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'Mofiqul/dracula.nvim'
   Plug 'npxbr/gruvbox.nvim'
 
   Plug 'puremourning/vimspector'
