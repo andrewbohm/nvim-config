@@ -36,7 +36,8 @@ if has("nvim")
   Plug 'nvim-telescope/telescope.nvim'
 
   " Themes
-  Plug 'dracula/vim', { 'as': 'dracula' }
+  " Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'Mofiqul/dracula.nvim'
   Plug 'npxbr/gruvbox.nvim'
 
   Plug 'puremourning/vimspector'
