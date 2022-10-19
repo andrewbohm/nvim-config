@@ -72,6 +72,7 @@ if has("nvim")
   " Debugging
   Plug 'nvim-lua/plenary.nvim'
   Plug 'mfussenegger/nvim-dap'
+  Plug 'rcarriga/nvim-dap-ui'
 
   " GO
   Plug 'ray-x/go.nvim'
